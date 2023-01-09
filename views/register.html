@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/register-styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+
+</head>
+<body>
+<header class="main-header">
+    <div class="logo-search-financing">
+        <img class="logo" src = "/images/logo-mercado-liebre.svg" alt="logo mercado liebre">
+        <div class="search-box" >
+            <label for="search"><input type="text" placeholder="buscar productos, marcas y mas"></label>
+        <button class ="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <h3 class="financing"><i class="fa-solid fa-hand-holding-dollar"></i> 
+            Comprá en cuotas y sin tarjeta de crédito</h3>
+    </div>  
+    <div class="hamburguer">
+        <a href="#" class="hamburger-button"> <i class="fa-solid fa-bars"></i></a>
+    </div>
+       <nav class="main-navbar">
+           <ul class="left-navbar">
+               <li><a href="#">Ofertas</a></li>
+               <li><a href="#">Tiendas Oficiales</a></li>
+               <li><a href="#">Vender</a></li>
+               <li><a href="#">Ayuda</a></li>
+           </ul>      
+           <ul class="right-navbar">
+               <li><a href="/register">Creá tu cuenta</a>  <i class="fa-regular fa-id-card"></i></li>
+               <li><a href="/login">Ingresá</a>  <i class="fa-solid fa-right-to-bracket"></i></li>
+               <li><a href="#">Mis compras</a>  <i class="fa-solid fa-basket-shopping"></i></li>
+             </ul>
+       </nav>   
+    </div>
+</header> 
+<main>  
+    <form action="/registro" method="POST">
+        <p>
+            <label for="name">Nombre y Apellido</label>
+            <input type="text" name="name" id="nombre">
+        </p>
+        <p>
+            <label for="Username">Nombre de usuari@</label>
+            <input type="text" name="username" id="nombre-de-usuario">
+        </p>
+        <p>
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" name="date" id="fecha-de-nacimiento">
+        </p>
+        <p>
+            <label for="address">Domicilio</label>
+            <input type="type" name="address" id="domicilio">
+        </p>
+        <p>
+            <label>Perfil del usuario:
+                <input type="radio" name="perfil-del-usuario">Comprador
+                <input type="radio" name="perfil-del-usuario">Vendedor
+            </label>
+        </p>
+        <p>
+            <label for="categories">Categorías de interés (puedes elegir más de una):</label>
+                <input type="checkbox" name="categories" value="electro">Electro
+                <input type="checkbox" name="categories" value="moda">Moda
+                <input type="checkbox" name="categories" value="hogar">Hogar
+                <input type="checkbox" name="categories" value="Jugueteria">Jugueteria
+                <input type="checkbox" name="categories" value="vida-sana">Vida Sana
+            </label>
+        </p>
+        <p>
+            <label>Foto de Usuario</label>
+            <input type="file" name="avatar" accept=".jpg">
+        </p>
+        <p>
+            <label for="password">Contraseña</label>
+            <input type="type" name="password" id="contraseña">
+        </p>
+        <p>
+            <label for="password">Confirmar contraseña</label>
+            <input type="type" name="password" id="confirmar-contraseña">
+        </p>
+        <p>
+            <button type="submit">Enviar<a href="/"></a></button>
+        </p>
+        <p>
+            <button type="reset">Borrar</button>
+        </p>
+    </form>
+</main>
+<footer>
+
+</footer> 
+    
+</body>
+</html>
