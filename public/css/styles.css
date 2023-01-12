@@ -20,6 +20,7 @@ main {
 .logo{
     width:25vw;
 }
+/*
 .search-box{
     width:25vw;
 }
@@ -32,12 +33,13 @@ main {
     text-align:center;
     font-size:16px;
 }
+*/
 .hamburger-button{
     background-color:#1259c3;;
     color:#ffffff;
     display:block;
-    max-width:40px;
-    padding:10px 0;
+    max-width:30px;
+    padding:6px 0;
     border-radius:8px;
     text-align:center;
     font-size:18px;
@@ -75,7 +77,6 @@ main {
 .inner-box{
     border-bottom:10px;
     border-top: solid 1px #ebebeb;
-    padding:15px;
 }
 .container img{
     width: 75%;
@@ -96,7 +97,7 @@ main section article div i{
     background-color: #FFF;
     border-radius: 50%;
     position:relative;
-    top: -30px;
+    top: -15px;
     right: -85%;
     transition-property: all;
 }
@@ -111,7 +112,7 @@ main section article div:hover i{
 }
 #discount{
     font-size:16px;
-    text-align:left;
+    text-align:right;
     color:#39b54a;
     display: inline-block;
     width:70%;
@@ -150,7 +151,7 @@ h3 {
     color:  #666;
     padding:1em;
 }
-ul {
+ul{
     font-size: 12px;
 }
 #search{
@@ -173,7 +174,7 @@ ul {
     transition-property:all;
 }
 #form-button:hover{
-background-color:#0022AA;
+    background-color:#0022AA;
 }
 #checkbox{
     display: flex;
@@ -187,18 +188,14 @@ form p{
     text-align: center;
     font-size: 14px;
 }
-:placeholder-shown{
-    text-align: center;
-    height: 1.5em;
-    width: 200px;
-    border-radius: 0.5em;
-    color:#ebebeb;
-}
 
 #date{
     font-weight:800px;
     font-size: 15px;
     color: #1259c3;
+}
+.icons-footer:hover{
+    color:#EAC926;
 }
 
 @media screen and (max-width:360px) {
@@ -211,23 +208,79 @@ form p{
     .sight-navbar{
         display:none;
     }
-    .logo-search{
-        display: flex;
-        justify-content:space-between;
-        padding:20px;
-    }
     .logo{
-        width:50%;
-    }
-    .search-box{
-        width:50%;
+        width: 45%;
+        padding-left: 10px;
+        padding-top: 10px;
     }
     .main-header{
         padding: 1em;
     }
-    .search-box{
-        display: flex;
+    #price{
+        padding: 10px;
+        padding-top:0px;
     }
+    #discount{
+        padding-right: 10px;
+    }
+    footer{
+        padding-right: 15px;
+    }
+    .search-box{
+        position: absolute;
+        left: 48%;
+        top: 5%;
+        transform: translate(12.5%,12.5%);
+        padding: 2px;
+    }
+    input{
+        outline: none;
+        box-sizing: border-box;
+        height: 20px;
+        width: 0;
+        padding: 0 10px;
+        color: #000;
+        border-radius: 20px;
+        font-size: 20px;
+        border: 1px solid #1259c3;
+        transition: all .7s ease;
+    }     
+    ::placeholder{
+        color: grey;
+    }    
+    .btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 35px;
+        height: 35px;
+        background: #1259c3;
+        line-height:20px;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        transition:.5;
+    }
+    .btn i{
+        font-size: 20px;
+        color: white;
+        line-height: 32px;
+        transition: all .7s ease;
+    }
+    .search-box:hover input{
+        width: 130px;
+    }
+    .search-box:hover i{
+        transform: rotate(-360deg);
+    }
+    .btn:hover{
+       background: #1259c3;
+    }
+    .financing{
+        padding:8px;
+        padding-left:20px;
+    }
+    
 }
 
 @media screen and (min-width:361px) {
@@ -241,12 +294,23 @@ form p{
         padding-left:15px;
         box-shadow:0px 0px 10px rgb(100, 100, 100);
     }
+    article.container{
+        width: 40%;
+    }
+    .main-sections section{
+        display: flex;
+        flex-wrap: nowrap; 
+    }
+    #last-view-section{
+        flex-wrap: wrap;
+        border:1px solid red;
+    }
     .hamburger-button{
         display:none;
     } 
-    .logo-search-financing{
+    .logo-search{
         display:flex;
-        justify-content:space-between;
+        justify-content:center;
         flex-wrap:nowrap;
     }
     .main-navbar{
@@ -271,34 +335,17 @@ form p{
         padding-bottom: 1em;
         padding-right: 10px;
     }
-    .logo-search{
-        display: flex;
-        padding:20px;
-    }
     .financing{
         display: flex;
-        justify-content:space-between;
         padding:20px;
         text-align: center;
     }
-    .main-sections section{
-        display: flex;
-        justify-content:flex-start;
-        flex-wrap: nowrap; 
-        padding: 10px; ;
-    }
-    
 }
-
 
 @media screen and (min-width:769px) {
     .main-sections section article{
-            width: 23%;
-        }
-        .descuento{
-            width: 40%;
-            margin-left: 15px;
-        }
+        width: 23%;
+    }   
 }
 
 @media(min-width:1280px){
@@ -318,7 +365,4 @@ form p{
     .footer{
         display: flex;
     }
-}
-.icons-footer:hover{
-    color:#EAC926;
 }
