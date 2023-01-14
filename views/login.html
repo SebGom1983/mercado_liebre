@@ -15,35 +15,40 @@
 </head>
 <body>
 <header class="main-header">
-    <div class="logo-search-financing">
-        <img class="logo" src = "/images/logo-mercado-liebre.svg" alt="logo mercado liebre">
-        <div class="search-box" >
-            <label for="search">
-                <input type="text" placeholder="buscar productos, marcas y mas">
-        <button class ="search-button"><i class="fa-solid fa-magnifying-glass"></i></button><input>
-    </label>
+    <div class="logo-search-financing-container">
+        <div class="logo-search">
+            <img class="logo" src = "/images/logo-mercado-liebre.svg" alt="logo mercado liebre">
+            <div class="search-box">
+                <form action="#" method="GET"></form>
+                    <label for="search">
+                        <input type="text" placeholder=" buscar productos, marcas y mas" name="search" id="search">
+                    </label>    
+                        <div class="btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>       
+            </div>        
         </div>
-        <h3 class="financing"><i class="fa-solid fa-hand-holding-dollar"></i> 
-            Comprá en cuotas y sin tarjeta de crédito</h3>
-    </div>  
-    <div class="hamburguer">
-        <a href="#" class="hamburger-button"> <i class="fa-solid fa-bars"></i></a>
+        <div class="financing">
+            <h3><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
+        </div>
+        <div class="hamburguer">
+            <a href="#" class="hamburger-button"> <i class="fa-solid fa-bars"></i>
+        </div>
     </div>
-       <nav class="main-navbar">
-           <ul class="left-navbar">
-               <li><a href="#">Ofertas</a></li>
-               <li><a href="#">Tiendas Oficiales</a></li>
-               <li><a href="#">Vender</a></li>
-               <li><a href="#">Ayuda</a></li>
-           </ul>      
-           <ul class="right-navbar">
-               <li><a href="/register">Creá tu cuenta</a>  <i class="fa-regular fa-id-card"></i></li>
-               <li><a href="/login">Ingresá</a>  <i class="fa-solid fa-right-to-bracket"></i></li>
-               <li><a href="#">Mis compras</a>  <i class="fa-solid fa-basket-shopping"></i></li>
-             </ul>
-       </nav>  
-    </div>
-</header> 
+    <nav class="main-navbar">
+        <ul class="left-navbar">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>      
+        <ul class="right-navbar">
+            <li><a href="/register">Creá tu cuenta</a>  <i class="fa-regular fa-id-card"></i></li>
+            <li><a href="/login">Ingresá</a>  <i class="fa-solid fa-right-to-bracket"></i></li>
+            <li><a href="#">Mis compras</a>  <i class="fa-solid fa-basket-shopping"></i></li>
+          </ul>
+    </nav>
+</header>
 <main>  
     <form action="/registro" method="POST" class="login-form">
         <p class="control-form">
