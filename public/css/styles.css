@@ -107,6 +107,10 @@ main section article div:hover i{
     font-size:16px;
     text-align:left;
     margin:auto;
+    color: transparent;
+}
+#description:hover{
+    color:#666;
 }
 h2 {
     text-align: left;
@@ -281,6 +285,10 @@ form p{
         padding-left:15px;
         box-shadow:0px 0px 10px rgb(100, 100, 100);
     }
+    .main-sections article:hover{
+        box-shadow:0px 0px 50px rgb(100, 100, 100);
+
+    }
     article.container{
         width: 40%;
     }
@@ -401,7 +409,6 @@ form p{
         display:flex;
         justify-content: center;
     }
-    
 }
 
 @media(min-width:1280px){
